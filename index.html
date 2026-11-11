@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymstStart | Rozcestník</title>
+    <style>
+        :root {
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --primary: #1e3a8a; /* Hluboká modrá */
+            --primary-hover: #172554;
+            --secondary-bg: #f8fafc;
+            --secondary-border: #e2e8f0;
+            --secondary-text: #334155;
+            --radius: 16px;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #3b82f6 100%);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 440px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 36px 24px;
+            box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .logo-container {
+            width: 72px;
+            height: 72px;
+            margin: 0 auto 16px auto;
+            border-radius: 50%;
+            background-color: #dbeafe;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border: 3px solid #eff6ff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #dbeafe;
+            color: #1e40af;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin: 0 0 8px 0;
+            color: var(--text-main);
+        }
+
+        p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin: 0 0 28px 0;
+            line-height: 1.5;
+        }
+
+        .links-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 14px 16px;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            box-sizing: border-box;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            box-shadow: 0 4px 12px rgba(30, 58, 138, 0.25);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background-color: var(--secondary-bg);
+            color: var(--secondary-text);
+            border: 1px solid var(--secondary-border);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--secondary-border);
+            transform: translateY(-1px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            
+            <!-- LOGO: Načítá soubor logo.png ze stejné složky -->
+            <div class="logo-container">
+                <img src="logo.png" alt="Logo Gymnázium Šternberk">
+            </div>
+
+            <span class="badge">Gymnázium Šternberk</span>
+            <h1>GymstStart</h1>
+            <p>Průvodce a rozcestník pro uchazeče o studium na Gymnáziu Šternberk.</p>
+
+            <div class="links-group">
+                <!-- HLAVNÍ ODKAZ -->
+                <a href="https://gymststart.macaly.app" class="btn btn-primary" target="_blank">
+                    Spustit portál pro uchazeče (GymstStart)
+                </a>
+
+                <!-- OFICIÁLNÍ WEB ŠKOLY -->
+                <a href="https://gymst.edupage.org" class="btn btn-secondary" target="_blank">
+                    Oficiální web školy 
+                </a>
+
+                <!-- INSTAGRAM ŠKOLY -->
+                <a href="https://www.instagram.com/gymst_official/" class="btn btn-secondary" target="_blank">
+                    Oficiální Instagram (@gymst_official)
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
